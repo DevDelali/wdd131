@@ -34,7 +34,7 @@ nav {
     flex-wrap: wrap;
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 800px;
 }
 
 nav.show {
