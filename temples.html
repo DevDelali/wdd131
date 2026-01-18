@@ -4,11 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temples - WDD131 Web Development </title>
+    <title>Temples</title>
+    <meta name="description" content="a responsive website with images of the LDS Temples">
+    <meta name="author" content="Nyakey Paul">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <h1>Temple Album</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div class="container">
+            <figure>
+                <img src="images/temple1.jfif" alt="Temple 1">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple2.jfif" alt="Temple 2">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple3.jfif" alt="Temple 3">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple4.jfif" alt="Temple 4">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple5.jfif" alt="Temple 5">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.jfif" alt="Temple 6">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Nyakey Paul - <span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
