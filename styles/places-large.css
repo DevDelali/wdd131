@@ -1,0 +1,38 @@
+@media only screen and (min-width: 840px) {
+    .image-container {
+        position: relative;
+        /* Established reference point for children */
+        display: inline-block;
+        /* Keeps the container the same size as the image */
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5);
+
+    }
+
+    td {
+        border: 1px solid #0077b6;
+        padding: 0;
+    }
+}

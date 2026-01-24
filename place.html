@@ -9,7 +9,7 @@
     <meta name="description" content="Places of a county where I would like to go in the future">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/places-large.css">
-    <script src="styles/place.css" defer></script>
+    <script src="scripts/place.js" defer></script>
 
 </head>
 
@@ -17,9 +17,10 @@
     <header>
         <h1> Greece</h1>
     </header>
-    <main>
+    <main class="image-container">
 
-        <div>
+
+        <div class="hero">
             <picture>
                 <source srcset="images/hero-large.webp" media="(min-width: 700px)">
                 <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
@@ -27,24 +28,58 @@
             </picture>
         </div>
         <div>
-            <section>
-                <h2>Data</h2>
-                <ul>Area: </ul>
-                <ul>Population: </ul>
-                <ul>Capital</ul>
-                <ul>Languages </ul>
-                <ul>Currency: </ul>
-                <ul>Time Zone: </ul>
-                <ul>Calling Code: </ul>
-                <ul>Internet TLD: </ul>
+            <section class="container top-left">
+                <h2>Data</h2><br>
+                <table>
+                    <tr>
+                        <td>Area</td>
+                        <td>131,957 km²</td>
+                    </tr>
+                    <tr>
+                        <td>Population</td>
+                        <td>Approximately 10.25 million</td>
+                    </tr>
+                    <tr>
+                        <td>Capital</td>
+                        <td>Athens</td>
+                    </tr>
+                    <tr>
+                        <td>Languages</td>
+                        <td>Greek, Turkish, Albanian, Romani</td>
+                    </tr>
+                    <tr>
+                        <td>Currency</td>
+                        <td>Euro</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone</td>
+                        <td>UTC+2.00</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code</td>
+                        <td>+30</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD</td>
+                        <td>.gr</td>
+                    </tr>
+                </table>
             </section>
 
-            <section>
-                <h2>Weather</h2>
-                <ul>Temperature: </ul>
-                <ul>Conditions: </ul>
-                <ul>Wind: </ul>
-                <ul>Wind Chill: </ul>
+            <section class="container bottom-right">
+                <br>
+                <h2>Weather</h2><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-cloud-sun" viewBox="0 0 16 16">
+                    <path
+                        d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z" />
+                    <path
+                        d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+                </svg><br>
+                <ul>Temperature: <span id="temp-val"></span></ul>
+                <ul>Conditions: <span id="cond-val"></span></ul>
+                <ul>Wind: <span id="wind-val"></span></ul>
+                <ul>Wind Chill: <span id="chill-val"></span></ul>
             </section>
 
         </div>
