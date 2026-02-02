@@ -6,9 +6,9 @@
     #menu {
         display: none;
     }
-}
 
-nav li {
-    display: block;
-    flex: 1 1 100%;
+    nav li {
+        display: block;
+        flex: 1 1 100%;
+    }
 }
