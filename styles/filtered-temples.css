@@ -116,3 +116,12 @@ figcaption {
 #menu.show::before {
     content: "X";
 }
+
+section {
+    padding: 1rem;
+}
+
+section:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 5%;
+}
