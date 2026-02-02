@@ -123,7 +123,8 @@ const temples = [
         dedicated: "2005, August 28",
         area: 17800,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/newport-beach-california-temple/newport-beach-california-temple-46818-main.jpg://churchofjesuschristtemples.org/assets/img/temples/newport-beach-california-temple/newport-beach-california-temple-34668-main.jpg://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087-main.jpg"
+            "imageUrl: 
+                "https://churchofjesuschristtemples.org/assets/img/temples/newport-beach-california-temple/newport-beach-california-temple-46818-main.jpg"
     },
 
     // Add more temple objects here...
@@ -132,30 +133,27 @@ const temples = [
 createTempleCard();
 
 function createTempleCard() {
+    const container = document.querySelector(".container");
+    if (!container) return;
+
     temples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");
-        let area = document.createElement("p")
+        let area = document.createElement("p");
         let img = document.createElement("img");
 
-
         name.textContent = temple.templeName;
-        location.innerHTML = `<span class="label">Location: </span? ${temple.location}`;
-        dedication.innerHTML = `<span class="label">Dedicated: </span>${temple.dedicated}`;
-        area.innerHTML = `<span class="label">Dedicated:</span>${temple.area}`;
-        img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt", `${temple.templeName} Temple`);
-        img.setAttribute("loading", "lazy")
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
 
-        card.appendChild(name)
-        card.appendChild(location)
-        card.appendChild(dedication)
-        card.appendChild(area)
-        card.appendChild(img)
+        img.src = temple.imageUrl;
+        img.alt = `${temple.templeName} Temple`;
+        img.loading = "lazy";
 
-        document.querySelector(".cointainer").appendChild(card);
-
-    })
+        card.append(name, location, dedication, area, img);
+        container.appendChild(card);
+    });
 }

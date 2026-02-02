@@ -1,22 +1,18 @@
-@media only screen and (min-width: 40em) {
-    h1 {
-        font-size: 2rem;
-    }
-
+@media (min-width: 40em) {
     nav {
         display: flex;
-    }
-
-    nav li {
-        display: block;
-        flex: 1 1 100%;
-    }
-
-    nav a {
-        text-align: center;
     }
 
     #menu {
         display: none;
     }
+}
+
+nav li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+nav a {
+    text-align: center;
 }
