@@ -117,15 +117,15 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/san-antonio-texas-temple/san-antonio-texas-temple-55647-main.jpg"
     },
-    {
-        templeName: "Newport Beach California ",
-        location: "Newport Beach, California",
-        dedicated: "2005, August 28",
-        area: 17800,
-        imageUrl:
-            "imageUrl: 
-                "https://churchofjesuschristtemples.org/assets/img/temples/newport-beach-california-temple/newport-beach-california-temple-46818-main.jpg"
-    },
+    // {
+    //     templeName: "Newport Beach California ",
+    //     location: "Newport Beach, California",
+    //     dedicated: "2005, August 28",
+    //     area: 17800,
+    //     imageUrl:
+    //         "imageUrl: 
+    //             "https://churchofjesuschristtemples.org/assets/img/temples/newport-beach-california-temple/newport-beach-california-temple-46818-main.jpg"
+    // },
 
     // Add more temple objects here...
 ];
