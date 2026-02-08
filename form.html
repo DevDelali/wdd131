@@ -9,12 +9,63 @@
     <meta name="author" content="Nyakey Paul">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
-    <script>
-
-    </script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
+    <main>
+        <h1>PRODUCT REVIEW</h1>
+        <form method="get" action="review.html">
+            <fieldset class="pdform">
+                <label for="product">Product:</label>
+                <select id="product" name="product">
+                    <option value="">Please Select a Product &#9662;</option>
+                    <option value="tuexedo">Tuxedo</option>
+                    <option value="suit">Suit</option>
+                    <option value="blazzer">Blazzer</option>
+                    <option value="bomber">Bomber Jacket</option>
+                    <option value="jacket">Leather Jacket</option>
+                    <option value="pants">Cargo Pants</option>
+                </select>
+
+                <label for="rating">Overall Rating:</label>
+                <input type="radio" id="rating" name="rating" value="1">
+                <label for="rating1">1 Star</label>
+                <input type="radio" id="rating" name="rating" value="2">
+                <label for="rating2">2 Stars</label>
+                <input type="radio" id="rating" name="rating" value="3">
+                <label for="rating3">3 Stars</label>
+                <input type="radio" id="rating" name="rating" value="4">
+                <label for="rating4">4 Stars</label>
+                <input type="radio" id="rating" name="rating" value="5">
+                <label for="rating5">5 Stars</label>
+
+                <label for="date">Date of Purchase*:</label>
+                <input type="date" name="date" id="date" required>
+
+                <label for="likes">What did you like about the product ? (check all that apply)</label>
+                <input type="checkbox" id="likes" name="checkbox" value="quality"> Quality
+                <input type="checkbox" id="likes" name="checkbox" value="price">Price
+                <input type="checkbox" id="likes" name="checkbox" value="design">Design
+                <input type="checkbox" id="likes" name="checkbox" value="comfort">Comfort
+                <input type="checkbox" id="likes" name="checkbox" value="durability">Durability
+
+                <label for="suggestions">Comments About the Products (Optional):</label>
+                <textarea type="text" id="suggestions" name="suggestions"></textarea>
+
+                <label for="name">Your Name ( Optional) :</label>
+                <input type="text" id="name" name="name">
+
+                <label for="sumbit"></label>
+            </fieldset>
+
+            <input type="submit" name="submit" id="sumbit" value="Submit Review">
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
