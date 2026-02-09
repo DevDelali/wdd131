@@ -13,8 +13,11 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>PRODUCT REVIEW</h1>
+    </header>
+    <main>
+
         <form method="get" action="review.html">
             <fieldset class="pdform">
                 <label for="product">Product:</label>
@@ -29,16 +32,16 @@
                 </select>
 
                 <label for="rating">Overall Rating:</label>
-                <input type="radio" id="rating" name="rating" value="1">
-                <label for="rating1">1 Star</label>
-                <input type="radio" id="rating" name="rating" value="2">
-                <label for="rating2">2 Stars</label>
-                <input type="radio" id="rating" name="rating" value="3">
-                <label for="rating3">3 Stars</label>
-                <input type="radio" id="rating" name="rating" value="4">
-                <label for="rating4">4 Stars</label>
-                <input type="radio" id="rating" name="rating" value="5">
-                <label for="rating5">5 Stars</label>
+                <input type="radio" name="rating" id="rating1" value="1">
+                <label for="rating1">☆</label>
+                <input type="radio" name="rating" id="rating2" value="2">
+                <label for="rating2">☆☆</label>
+                <input type="radio" name="rating" id="rating3" value="3">
+                <label for="rating3">☆☆☆</label>
+                <input type="radio" name="rating" id="rating4" value="4">
+                <label for="rating4">☆☆☆☆</label>
+                <input type="radio" name="rating" id="rating5" value="5">
+                <label for="rating5">☆☆☆☆☆</label>
 
                 <label for="date">Date of Purchase*:</label>
                 <input type="date" name="date" id="date" required>
@@ -64,7 +67,8 @@
 
     </main>
     <footer>
-
+        <p>© Nyakey Paul - <span id="currentyear"></span></p>
+        <p id="lastModified"></p>
     </footer>
 
 </body>
