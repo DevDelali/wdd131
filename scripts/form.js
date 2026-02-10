@@ -65,19 +65,12 @@ products.forEach(product => {
     productSelect.appendChild(option);
 });
 
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    let reviewCount = localStorage.getItem("reviewCount");
-
-    if (reviewCount === null) {
-        reviewCount = 0;
-    }
-
-    reviewCount = Number(reviewCount) + 1;
-
-    localStorage.setItem("reviewCount", reviewCount);
-
-    document.getElementById("reviewCount").textContent = reviewCount;
-
-});
+// increment review count when the form is submitted (not on page load)
+const form = document.querySelector("form");
+if (form) {
+    form.addEventListener("submit", () => {
+        let reviewCount = Number(localStorage.getItem("reviewCount") || 0);
+        reviewCount += 1;
+        localStorage.setItem("reviewCount", reviewCount);
+    });
+}

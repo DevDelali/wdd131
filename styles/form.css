@@ -48,6 +48,19 @@ h1 {
     margin-right: 5px;
 }
 
+/* Make labels inside fieldsets inline so radios/checkboxes sit beside text */
+.pdform fieldset label {
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.pdform fieldset input[type="radio"],
+.pdform fieldset input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
 input[type="submit"] {
     width: 100%;
     max-width: 400px;
