@@ -25,17 +25,17 @@
 
                 <label for="product">Product:</label>
                 <select id="product" name="product" required>
-                    <option value="">Please Select a Product</option>
+                    <option value="deselected" disabled selected>Please Select a Product</option>
                 </select>
 
                 <fieldset>
                     <legend>Overall Rating</legend>
 
-                    <label><input type="radio" name="rating" value="1"> ☆</label>
-                    <label><input type="radio" name="rating" value="2"> ☆☆</label>
-                    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-                    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-                    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                    <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                    <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                    <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                    <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                    <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
                 </fieldset>
 
                 <label for="date">Date of Purchase*:</label>
@@ -44,11 +44,11 @@
                 <fieldset>
                     <legend>What did you like about the product?</legend>
 
-                    <label><input type="checkbox" name="features" value="quality"> Quality</label>
-                    <label><input type="checkbox" name="features" value="price"> Price</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
-                    <label><input type="checkbox" name="features" value="comfort"> Comfort</label>
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                    <label for="quality"><input type="checkbox" id="quality" name="features" value="quality"> Quality</label>
+                    <label for="price"><input type="checkbox" id="price" name="features" value="price"> Price</label>
+                    <label for="design"><input type="checkbox" id="design" name="features" value="design"> Design</label>
+                    <label for="comfort"><input type="checkbox" id="comfort" name="features" value="comfort"> Comfort</label>
+                    <label for="durability"><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
                 </fieldset>
 
                 <label for="suggestions">Comments About the Product (Optional):</label>
