@@ -1,6 +1,7 @@
 body {
-    max-width: 840px;
+    max-width: 768px;
     margin: 0 auto;
+    font-family: Arial, sans-serif;
 }
 
 header,
@@ -19,22 +20,22 @@ h1 {
 }
 
 .pdform {
-    padding: 1rem;
-    background-color: #f2f2f2;
     padding: 20px;
+    background-color: #f2f2f2;
     border-radius: 5px;
 }
 
 .pdform input[type="text"],
-input[type="email"],
-select,
-input[type="date"],
-textarea {
+.pdform input[type="email"],
+.pdform select,
+.pdform input[type="date"],
+.pdform textarea {
     display: block;
     width: 100%;
     max-width: 400px;
     padding: 0.9rem;
     border-radius: 5px;
+
 }
 
 .pdform label {
@@ -43,15 +44,8 @@ textarea {
     display: block;
 }
 
-.pdform input[type="radio"] {
-    display: inline;
+.pdform label input[type="radio"] {
     margin-right: 5px;
-}
-
-.pdform input[type="radio"]+label {
-    display: inline;
-    margin-top: 0;
-    margin-right: 15px;
 }
 
 input[type="submit"] {
@@ -62,11 +56,29 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     padding: 0.9rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+fieldset {
+    margin: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 120px;
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }

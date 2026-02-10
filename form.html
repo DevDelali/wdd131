@@ -19,50 +19,48 @@
     <main>
 
         <form method="get" action="review.html">
+
             <fieldset class="pdform">
+                <legend>Product Review</legend>
+
                 <label for="product">Product:</label>
-                <select id="product" name="product">
-                    <option value="">Please Select a Product &#9662;</option>
-                    <option value="tuexedo">Tuxedo</option>
-                    <option value="suit">Suit</option>
-                    <option value="blazzer">Blazzer</option>
-                    <option value="bomber">Bomber Jacket</option>
-                    <option value="jacket">Leather Jacket</option>
-                    <option value="pants">Cargo Pants</option>
+                <select id="product" name="product" required>
+                    <option value="">Please Select a Product</option>
                 </select>
 
-                <label for="rating">Overall Rating:</label>
-                <input type="radio" name="rating" id="rating1" value="1">
-                <label for="rating1">☆</label>
-                <input type="radio" name="rating" id="rating2" value="2">
-                <label for="rating2">☆☆</label>
-                <input type="radio" name="rating" id="rating3" value="3">
-                <label for="rating3">☆☆☆</label>
-                <input type="radio" name="rating" id="rating4" value="4">
-                <label for="rating4">☆☆☆☆</label>
-                <input type="radio" name="rating" id="rating5" value="5">
-                <label for="rating5">☆☆☆☆☆</label>
+                <fieldset>
+                    <legend>Overall Rating</legend>
+
+                    <label><input type="radio" name="rating" value="1"> ☆</label>
+                    <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+                </fieldset>
 
                 <label for="date">Date of Purchase*:</label>
                 <input type="date" name="date" id="date" required>
 
-                <label for="likes">What did you like about the product ? (check all that apply)</label>
-                <input type="checkbox" id="likes" name="checkbox" value="quality"> Quality
-                <input type="checkbox" id="likes" name="checkbox" value="price">Price
-                <input type="checkbox" id="likes" name="checkbox" value="design">Design
-                <input type="checkbox" id="likes" name="checkbox" value="comfort">Comfort
-                <input type="checkbox" id="likes" name="checkbox" value="durability">Durability
+                <fieldset>
+                    <legend>What did you like about the product?</legend>
 
-                <label for="suggestions">Comments About the Products (Optional):</label>
-                <textarea type="text" id="suggestions" name="suggestions"></textarea>
+                    <label><input type="checkbox" name="features" value="quality"> Quality</label>
+                    <label><input type="checkbox" name="features" value="price"> Price</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <label><input type="checkbox" name="features" value="comfort"> Comfort</label>
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                </fieldset>
 
-                <label for="name">Your Name ( Optional) :</label>
+                <label for="suggestions">Comments About the Product (Optional):</label>
+                <textarea id="suggestions" name="suggestions"></textarea>
+
+                <label for="name">Your Name (Optional):</label>
                 <input type="text" id="name" name="name">
 
-                <label for="sumbit"></label>
+                <input type="submit" value="Submit Review">
+
             </fieldset>
 
-            <input type="submit" name="submit" id="sumbit" value="Submit Review">
         </form>
 
     </main>

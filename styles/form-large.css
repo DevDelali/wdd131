@@ -1,0 +1,22 @@
+@media (min-width: 800px) {
+
+
+    main {
+        margin: 1rem auto;
+    }
+
+
+    /* Create row layout for fields */
+    .pdform label,
+    .pdform input,
+    .pdform select,
+    .pdform textarea {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
