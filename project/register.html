@@ -16,16 +16,62 @@
     <header>
         <img src="images/food-2.svg" alt="Ekua's Eatery Logo" width="30" height="30">
         <h1>Ekua's Eatery</h1>
-
+        <a id="menu" href="#"></a>
 
         <nav>
             <a href="siteplan.html">Home</a>
+            <a href="menu.html">Menu</a>
             <a href="location.html">Location</a>
-            <a href="register.html">Register</a>
-            <a href="customer-service.html">Customer Care</a>
+            <a href="register.html">Customer Care</a>
         </nav>
     </header>
-    <main></main>
+    <main class="form-page">
+
+        <section class="signup-section">
+            <form class=" pdform" method="post" action="review.html">
+                <legend>Sign Up</legend>
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="password">Password *</label>
+                <input type="text" id="password" required>
+
+                <input type="submit" value="Register">
+
+            </form>
+
+        </section>
+
+        <section class="feedback-section">
+            <form class="pdform">
+                <legend>Feedback</legend>
+                <label for="rating">Rating</label>
+                <select id="rating">
+                    <option value="" disabled selected>Please rate our service.</option>
+                    <option value="5">Excellent</option>
+                    <option value="4">Very Good</option>
+                    <option value="3">Good</option>
+                    <option value="2">Fair</option>
+                    <option value="1">Poor</option>
+                </select>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments"></textarea>
+
+                <input type="submit" value="Send Feedback">
+
+            </form>
+
+        </section>
+
+    </main>
+
     <footer>
         <p>© Nyakey Paul - <span id="currentyear"></span></p>
         <p id="lastModified"></p>

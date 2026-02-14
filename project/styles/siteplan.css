@@ -48,7 +48,7 @@ ul {
     margin: 1rem;
 }
 
-section p {
+.siteplan-sect p {
     margin: 1rem;
     font-family: Sans-serif;
 }
@@ -103,4 +103,100 @@ nav a:hover {
 
 #menu.show::before {
     content: "X";
+}
+
+
+/* -----Menu Webpage----- */
+.menu-sect {
+    width: 100%;
+    gap: 20px;
+}
+
+.menu-sect img {
+    max-width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* -----Location Webpage----- */
+.location-sect {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.location-sect h2 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.pdform input[type="text"],
+.pdform input[type="email"],
+.pdform select,
+.pdform input[type="date"],
+.pdform textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.9rem;
+    border-radius: 5px;
+
+}
+
+.pdform label {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.pdform label input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
 }

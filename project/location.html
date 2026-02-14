@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location</title>
+    <title>Map</title>
     <meta name="description" content="Location of Ekua's Eatery, using maps to help customers find us easily.">
     <meta name="author" content="Nyakey Paul">
     <link rel="stylesheet" href="styles/siteplan.css">
@@ -16,16 +16,41 @@
     <header>
         <img src="images/food-2.svg" alt="Ekua's Eatery Logo" width="30" height="30">
         <h1>Ekua's Eatery</h1>
-
+        <a id="menu" href="#"></a>
 
         <nav>
             <a href="siteplan.html">Home</a>
+            <a href="menu.html">Menu</a>
             <a href="location.html">Location</a>
-            <a href="register.html">Register</a>
-            <a href="customer-service.html">Customer Care</a>
+            <a href="register.html">Customer Care</a>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="location-sect">
+            <h2>Find Us</h2>
+            <p>Ekua's Eatery is located in the heart of Accra, Ghana, at the following address:</p>
+            <address>
+                123 Main Street<br>
+                Accra, Ghana<br>
+                +233 24 000 0000
+            </address>
+        </section>
+        <section class="location-sect">
+            <h2>Opening Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+            <p>Saturday: 10:00 AM - 8:00 PM</p>
+            <p>Sunday: Closed</p>
+        </section>
+        <section class="location-sect">
+            <h2>Find Our Nearby Shop 🔍 </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63523.61430371912!2d-0.24893571748028526!3d5.680454201307501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b341739adcd%3A0xe8a43593bdeb472b!2sThe%20Neem%20Grill!5e0!3m2!1sen!2sgh!4v1771091853754!5m2!1sen!2sgh"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
     <footer>
         <p>© Nyakey Paul - <span id="currentyear"></span></p>
         <p id="lastModified"></p>
