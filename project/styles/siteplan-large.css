@@ -9,6 +9,11 @@
 
     #menu {
         display: none;
+
+    }
+
+    .favorites-counter {
+        order: -1;
     }
 
     .container {
@@ -20,6 +25,16 @@
 
     section {
         padding: 1rem;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 30px #333;
     }
 }
 

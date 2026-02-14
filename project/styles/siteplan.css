@@ -227,3 +227,71 @@ legend {
     border: 1px solid var(--primary-color);
     padding: 0.5rem;
 }
+
+/* ===== FAVORITES SYSTEM ===== */
+.fav-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.menu-sect.favorited .fav-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.menu-sect.favorited {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(24, 120, 24, 0.2);
+}
+
+/* ===== FORM VALIDATION ===== */
+.form-valid {
+    border: 2px solid green !important;
+    background-color: #f0fff0;
+}
+
+.form-error {
+    border: 2px solid red !important;
+    background-color: #fff5f5;
+}
+
+#fname,
+#lname,
+#password,
+.pdform input[type="email"] {
+    border: 1px solid #ccc;
+}
+
+/* Favorites Counter */
+.favorites-counter {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.fav-count {
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+}
